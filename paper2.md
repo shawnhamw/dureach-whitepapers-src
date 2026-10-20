@@ -354,3 +354,24 @@ The multi-agent stack is no longer a research curiosity. It is production infras
 20. Integrate AI tools with the HubSpot MCP server - HubSpot docs.
 21. Zapier MCP: Perform 30,000+ actions in your AI tool.
 22. Zapier pricing: Why Zapier is a better value for automation.
+23. Plans & Pricing | Zapier.
+24. Security Overview — Composio Docs.
+25. Pricing | Composio.
+26. MCP Servers - Pipedream.
+27. MCP client reference - Pipedream.
+28. How MCP Authorization Works - Pipedream.
+29. A Survey of Agent Interoperability Protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP).
+30. Pricing | Dureach.
+31. Plans and Pricing - Pipedream.
+32. Fall 2026 Spotlight: HubSpot just made its most foundational product release, giving teams a new way to work to get 3x better outcomes.
+33. Vendavo Accelerates Sales with AI and Automation, Slashing Lead Response Time by 90% | Zapier.
+34. Uber lifts their lead conversion rate by 60% with agentic outreach | Salesforce.
+35. Outbound Cost Per Meeting (CPM) Optimization | Dureach.
+36. Authorization - Model Context Protocol.
+37. Breaking the Protocol: Security Analysis of the Model Context Protocol Specification and Prompt Injection Vulnerabilities in Tool-Integrated LLM Agents.
+38. CAN-SPAM Act: A Compliance Guide for Business | Federal Trade Commission.
+39. Guidance on direct marketing using electronic mail | ICO.
+40. FCC Document DA-26-12A1.
+41. Consolidated TEXT: 32024R1689 — EN — 27.07.2026.
+42. Towards Scalable Customization and Deployment of Multi-Agent Systems for Enterprise Applications.
+43. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md.
