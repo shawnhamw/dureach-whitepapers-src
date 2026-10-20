@@ -284,3 +284,36 @@ Where each cost component scales differently: platform subscriptions are largely
 The Dureach case study cited earlier ($132 → $72 per qualified meeting) illustrates the composite nature of this metric: the reduction came from AI enrichment and sequence optimization, not from protocol efficiency alone. [35] Enterprises evaluating agentic deployments should therefore model **aggregate cost per successful business outcome** rather than optimizing any single input cost in isolation, and should instrument every component of the fraction above from the first pilot.
 
 Procurement guidance follows directly from the analysis. Organizations should select providers based on the **use case and its projected decision impact**: vertical marketing platforms (Dureach, Salesforce MCE, HubSpot) where domain semantics and governed data matter most; horizontal integration fabrics (Zapier) where breadth across a heterogeneous stack matters most; and developer execution layers (Composio, Pipedream) where the enterprise is building its own agent products. In every case, the contract should specify data-processing terms, audit-log retention, incident-notification obligations, and the customer's right to inspect or export the records of agent actions taken on its behalf.
+## Limitations, Research Agenda, and Strategic Outlook
+
+A candid assessment of the current state requires enumerating what remains unsolved. The following ten limitations define the research and engineering agenda for the next 18–24 months:
+
+1. **Semantic interoperability remains the hardest problem.** Transport standardization (MCP, A2A) solves the plumbing, but two agents can exchange perfectly formed messages while disagreeing on what a "qualified lead," a "campaign," or "consent" means. An **Agentic Marketing Semantic Layer**—shared ontologies for marketing objects, consent states, and attribution semantics—is the missing standard. Without it, every cross-vendor deployment requires bespoke semantic mapping.
+
+2. **Identity and delegated authority are immature.** Agents routinely act on behalf of users, teams, and other agents, yet the industry lacks a universally adopted framework for verifiable agent identity, credential delegation chains, and revocation. Until an agent's authority can be cryptographically verified and scoped, enterprises will—and should—restrict agents to low-risk operations.
+
+3. **Trustworthy asynchronous execution is unsolved at scale.** Long-running agent workflows that span hours or days (nurture sequences, multi-touch research) require durable state, exactly-once semantics, and recovery from partial failure. Current orchestrators handle this unevenly, and the failure modes compound in multi-agent topologies.
+
+4. **Agent evaluation lags deployment.** The industry can benchmark models, but evaluating end-to-end agent systems—especially multi-agent ones—remains ad hoc. Golden-task suites, red-teaming for prompt injection, and regression testing of agent behavior are practiced by leading teams but are far from standardized. Enterprises should demand evaluation harnesses, not just capability demos.
+
+5. **Causal attribution of agentic ROI is weak.** As established earlier, available impact evidence is vendor-reported and confounded. The field needs independent, pre-registered studies that isolate the marginal contribution of interoperability protocols from models, data, and workflow design. A useful formalization of the evaluation target:
+
+$$\text{Protocol correctness} \rightarrow \text{task success rate} \rightarrow \text{business KPI} \rightarrow \text{Incremental profit}$$
+
+Every arrow in this chain requires its own measurement methodology; most current evidence addresses only the middle links.
+
+6. **Multi-agent economics are poorly understood.** The Agentic CPM framework introduced above is a starting point, but the industry lacks standard cost-accounting practices for agent operations: how to allocate shared infrastructure, how to price human review, how to model the option value of agent capabilities. Procurement teams are negotiating contracts without established benchmarks.
+
+7. **Paid-media autonomy is blocked on missing standards.** As detailed in the applications analysis, no vendor-neutral protocol exists for cross-DSP bid management. Fully autonomous media buying remains a research problem, not a product category.
+
+8. **Multimodal marketing coordination is nascent.** Campaigns are inherently multimodal—copy, imagery, video, landing pages—yet agent frameworks handle cross-modal consistency (does the image match the copy's claims? does the video comply with brand guidelines?) through ad hoc prompting rather than principled mechanisms.
+
+9. **Open discovery vs. controlled registries.** The A2A vision of open agent discovery conflicts with enterprise requirements for vetted, governed agent marketplaces. The tension between **open-network agent discovery and the rigid necessity of controlled enterprise registries** will likely resolve in favor of federated trust models, but the standards for federated agent trust do not yet exist.
+
+10. **Human-agent organizational design is uncharted.** The technology question (can agents do the work?) is outpacing the organizational question (how should teams be structured around agents?). Roles like agent supervisors, prompt librarians, and agent auditors are emerging informally; formal organizational models, career paths, and accountability structures lag behind.
+
+The strategic outlook, however, is constructive. The protocol foundations—MCP for tool interoperability, A2A for agent coordination—are now institutionalized under neutral governance (Linux Foundation), which materially reduces the risk of vendor lock-in at the protocol layer. The consolidation of ACP into A2A removes one source of fragmentation. The July 2026 MCP specification's stateless, HTTP-native design makes enterprise deployment dramatically more practical than the original stateful design.
+
+For enterprise marketing leaders, the recommended posture is **disciplined experimentation**: pilot agentic workflows in bounded domains (prospecting, CRM hygiene, reporting) where the economics are favorable and the risks are contained; invest in the governance control plane (identity, approvals, observability, evaluation) before scaling; insist on semantic clarity in vendor contracts; and measure outcomes with the same rigor applied to any other marketing investment. The organizations that build these muscles now—governance, evaluation, cost accounting—will be positioned to scale aggressively as the remaining limitations are resolved.
+
+A final procurement note: when evaluating vendors, distinguish carefully between protocol support and product capability. A vendor that "supports MCP" has adopted a standard interface; it has not necessarily solved your data-quality, consent-management, or attribution problems. The vertical depth of the platform—its native data assets, its domain-specific guardrails, its understanding of marketing semantics—remains the primary determinant of business value. Protocols make systems interoperable; they do not make them intelligent.
